@@ -19,11 +19,10 @@
     <meta property="og:description" content="Nos encantaría invitarte a nuestro gran día.">
     <meta property="og:image" content="img/logowedding.png">
     <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="img/logowedding.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 
     <script>
         // load css files from CDN if local node_modules fail
@@ -72,10 +71,9 @@
                         <nav>
                             <ul class="primary-nav">
                                 <li><a href="#agenda">Agenda</a></li>
+                                <li><a href="./recomendaciones.html">Recomendaciones</a></li>
                                 <li><a href="#preboda">Boda</a></li>
                                 <li><a href="#regalo">Regalo</a></li>
-                                <li><a href="./recomendaciones.html">Recomendaciones</a></li>
-                                <li><a href="#eng-fotos">Fotos</a></li>
                                 <li><a id="contador"></a></a></li>
                             </ul>
                             <ul class="member-actions">
@@ -89,6 +87,7 @@
                     <div class="navicon">
                         <a class="nav-toggle" href="#"><span></span></a>
                     </div>
+                    <br>
                 </div>
             </header>
         </section>
@@ -165,35 +164,44 @@
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
                         <h3 class="text-center" style="padding-bottom: 3%;"><strong>3 de octubre</strong></h3>
-                        <h5><em><strong>EVENTO:</strong></em> PREBODA</h5>
-                        <h5><em><strong>HORA:</strong></em> 20:00</h5>
-                        <h5><em><strong>LUGAR:</strong></em> SOCIEDAD GASTRONÓMICA “LA&nbsp;BECADA”</h5>
+                        <h5><strong>EVENTO:</strong> PREBODA</h5>
+                        <h5><strong>HORA:</strong> 20:00</h5>
+                        <h5><strong>LUGAR:</strong> SOCIEDAD GASTRONÓMICA “LA&nbsp;BECADA”</h5>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp4">
                         <h3 class="text-center" style="padding-bottom: 3%;"><strong>4 de octubre</strong></h3>
-                        <h5><em><strong>EVENTO:</strong></em> CEREMONIA</h5>
-                        <h5><em><strong>HORA:</strong></em> 12:30</h5>
-                        <h5><em><strong>LUGAR:</strong></em> IGLESIA CONCATEDRAL DE&nbsp;SANTA&nbsp;MARÍA&nbsp;DE&nbsp;LA&nbsp;REDONDA</h5>
+                        <h5><strong>EVENTO:</strong> CEREMONIA</h5>
+                        <h5><strong>HORA:</strong> 12:30</h5>
+                        <h5><strong>LUGAR:</strong> IGLESIA CONCATEDRAL DE&nbsp;SANTA&nbsp;MARÍA&nbsp;DE&nbsp;LA&nbsp;REDONDA</h5>
                     </div>
                     <br>
                     <div class="wp6">
-                        <h5><em><strong>EVENTO:</strong></em> CELEBRACIÓN</h5>
-                        <h5><em><strong>HORA:</strong></em> 14:00</h5>
-                        <h5><em><strong>LUGAR:</strong></em> BODEGA MARQUÉS DE VARGAS</h5>
+                        <h5><strong>EVENTO:</strong> CELEBRACIÓN</h5>
+                        <h5><strong>HORA:</strong> 14:00</h5>
+                        <h5><strong>LUGAR:</strong> BODEGA MARQUÉS DE VARGAS</h5>
                     </div>
                 </div>
             </div>
-            <div class="row section-padding">
+            <!-- <div class="row section-padding">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                        <i class="fa fa-tags"></i>&nbsp;&nbsp;Dress code
+                        <i class="fa fa-bed"></i>&nbsp;&nbsp;Dress code
+                    </a>
+                </div>
+            </div> -->
+            
+            <div class="row section-padding"></div>
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a class="btn btn-accent btn-small" href="./recomendaciones.html">
+                        <i class="fa fa-bed"></i>&nbsp;&nbsp;Recomendaciones&nbsp;&nbsp;<i class="fa fa-scissors"></i>
                     </a>
                 </div>
             </div>
+            <br>
         </div>
-        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+        <!-- <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content" style="height: 92vh; overflow: hidden;">
                     <div class="modal-body" style="height: 100%; padding: 2%;">
@@ -207,13 +215,13 @@
                         </div>
                         <br>
                         <br>
-                        <!-- <p class="text-center"><strong>PREBODA</strong></p>
+                        <p class="text-center"><strong>PREBODA</strong></p>
                         <p class="text-center"><strong>CEREMONIA</strong></p>
-                        <p class="text-center"><strong>CELEBRACIÓN</strong></p> -->
+                        <p class="text-center"><strong>CELEBRACIÓN</strong></p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     
     <section id="preboda" class="section">
@@ -332,12 +340,12 @@
 
     <section id="eng-fotos" class="section-padding">
         <div class="container-fluid">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-12 text-center">
                     <h3 class="header">Fotos</h3>
                 </div>
-            </div>
-            <div class="row">
+            </div> -->
+            <div class="row justify-content-center" style="display: flex; justify-content: center;">
                 <div class="col-md-2">
                     <a class="fancybox" rel="group" href="img/bottom-1.png">
                         <div class="img-wrap">
@@ -358,7 +366,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-2">
+                <!-- <div class="col-md-2">
                     <a class="fancybox" rel="group" href="img/bottom-3.png">
                         <div class="img-wrap">
                             <div class="overlay">
@@ -397,7 +405,7 @@
                             <img src="img/bottom-6.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
-                </div>
+                </div> -->
                 <div class="col-md-2">
                     <a class="fancybox" rel="group" href="img/bottom-7.png">
                         <div class="img-wrap">
@@ -408,7 +416,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-2">
+                <!-- <div class="col-md-2">
                     <a class="fancybox" rel="group" href="img/bottom-8.png">
                         <div class="img-wrap">
                             <div class="overlay">
@@ -457,7 +465,7 @@
                             <img src="img/bottom-12.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="container">
