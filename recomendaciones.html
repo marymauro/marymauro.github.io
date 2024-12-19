@@ -1,0 +1,272 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>¡Mar y Mauro se casan!</title>
+    <meta name="description" content="Nos encantaría invitarte a nuestro gran día.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="¡Mar y Mauro se casan!">
+    <meta property="og:description" content="Nos encantaría invitarte a nuestro gran día.">
+    <meta property="og:image" content="img/logowedding.png">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="img/logowedding.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
+        onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body id="top">
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a id="contador"></a></a></li>
+                            </ul>
+                            <ul class="member-actions">
+                                <li><a href="#rsvp" class="btn-white btn-small"
+                                    data-toggle="modal" data-target="#rsvp-modal""><i class="fa fa-address-card"></i>&nbsp;&nbsp;Confirmar asistencia</a></li>
+                                <li><a href="#contacto" class="btn-white btn-small"
+                                        onclick="window.location.href = '#contacto'; return false;"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="down-arrow floating-arrow"><a href="#intro"><i class="fa fa-angle-down"></i></a></div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h3>Recomendaciones</h3>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2>Hoteles</h2>
+            </div>
+            <div class="recommendations">
+                <div class="box">
+                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                    <h4>ÁUREA<br>
+                        PALACIO DE CORREOS</h4>
+                    <p><strong><a href="https://www.eurostarshotels.com/aurea-palacio-de-correos.html?promotion_code=BODAMARMAU&start=2025-10-03&end=2025-10-05" target="_blank">Reserva aquí</a></strong></p>
+                    <p>15% DE DESCUENTO CON EL CÓDIGO “BODAMARMAU”.
+                        Reservas desde 12/11/2024 hasta 01/09/2025.
+                        Válido para 10 habitaciones.<br>
+                        Aplicable al 3 y 4 de octubre de 2025.</p>
+                </div>
+                <div class="box">
+                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                    <h4>EUROSTARS<br>
+                        FUERTE RUAVIEJA</h4>
+                    <p><strong><a href="https://www.eurostarshotels.com/eurostars-fuerte-ruavieja.html?promotion_code=BODAMARMAU&start=2025-10-03&end=2025-10-05" target="_blank">Reserva aquí</a></strong></p>
+                    <p>15% DE DESCUENTO CON EL CÓDIGO “BODAMARMAU”.
+                        Reservas desde 12/11/2024 hasta 01/09/2025.
+                        Válido para 10 habitaciones.<br>
+                        Aplicable al 3 y 4 de octubre de 2025.</p>
+                </div>
+                <div class="box">
+                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                    <h4>EUROSTARS<br>
+                        MARQUÉS DE VALLEJO</h4>
+                    <p><strong><a href="https://www.eurostarshotels.com/eurostars-marques-de-vallejo.html?promotion_code=BODAMARMAU&start=2025-10-03&end=2025-10-05" target="_blank">Reserva aquí</a></strong></p>
+                    <p>15% DE DESCUENTO CON EL CÓDIGO “BODAMARMAU”.
+                        Reservas desde 12/11/2024 hasta 01/09/2025.
+                        Válido para 10 habitaciones.<br>
+                        Aplicable al 3 y 4 de octubre de 2025.</p>
+                </div>
+                <div class="box">
+                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                    <h4>HOTEL GRAN VÍA</h4>
+                    <p><strong><a href="https://www.hotelgranvialogrono.com/es/?checkin=03%2F10%2F2025&nights=2" target="_blank">Reserva aquí</a></strong></p>
+                </div>
+                <div class="box">
+                    <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                    <h4>HOTEL MURRIETA</h4>
+                    <p><strong><a href="https://www.hotelmurrieta.com/?date_in=2025-10-03&date_out=2025-10-05&promo_code=bodamarymauro" target="_blank">Reserva aquí</a></strong></p>
+                    <p>15% DE DESCUENTO CON EL CÓDIGO “bodamarymauro”.<br>
+                        Válido hasta agotar disponibilidad.<br>
+                        Aplicable al 3 y 4 de octubre de 2025.</p>
+                </div>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <h2>Peluquerías</h2>
+            </div>
+            <div class="recommendations">
+                <div class="box">
+                    <h4>RUBÉN HERNÁEZ</h4>
+                    <strong><a href="https://www.rubenhernaezpeluqueros.es/" target="_blank">Sitio web</a></strong><br>
+                    <br>
+                    Teléfono: <strong><a href="tel:+34 941239813">941 23 98 13</a></strong>
+                </div>
+                <div class="box">
+                    <h4>ÁNGELA RUIZ</h4>
+                    <strong><a href="https://peluqueriaangelaruiz.webador.es/" target="_blank">Sitio web</a></strong><br>
+                    <br>
+                    Teléfono: <strong><a href="tel:+34 941236790">941 23 67 90</a></strong>
+                </div>
+                <div class="box">
+                    <h4>CRISTINA MARZO</h4>
+                    <strong><a href="https://www.cristinamarzoestilistas.com/" target="_blank">Sitio web</a></strong><br>
+                    <br>
+                    Teléfono: <strong><a href="tel:+34 941244722">941 24 47 22</a></strong>
+                </div>
+                <div class="box">
+                    <h4>V&M PELUQUEROS</h4>
+                    <strong><a href="https://www.vmpeluqueros.com/" target="_blank">Sitio web</a></strong><br>
+                    <br>
+                    Teléfono: <strong><a href="tel:+34 941211488">941 21 14 88</a></strong><br>
+                    Teléfono: <strong><a href="tel:+34 941288264">941 28 82 64</a></strong><br>
+                    Teléfono: <strong><a href="tel:+34 941241882">941 24 18 82</a></strong>
+                </div>
+                <div class="box">
+                    <h4>JAVIER BAÑALES</h4>
+                    <strong><a href="http://www.javierbanales.com/" target="_blank">Sitio web</a></strong><br>
+                    <br>
+                    Teléfono: <strong><a href="tel:+34 941226968">941 22 69 68</a></strong>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section>
+        <div><br></div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p>
+                        <strong>MAR & MAURO</strong>
+                        <br>
+                        <a href="tel:+34 636271403">636271403</a> | <a href="tel:+34 650470476">650470476</a>
+                    </p>
+                    <p>Creado por Jaime Clavijo con mucho <span class="fa fa-heart pulse2"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onload = function() {
+            document.querySelector('.down-arrow a').click();
+        };
+    </script>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-46465113-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+        <script>
+            // Function to update the countdown
+            function updateCountdown() {
+                // Get today's date and time
+                var now = new Date().getTime();
+    
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+    
+                // Time calculations for days
+                var days = Math.ceil(distance / (1000 * 60 * 60 * 24));
+    
+                // Output the result in an element with id="contador"
+                document.getElementById("contador").innerHTML = distance < 0 ? "¡Hoy es el gran día!" : "Quedan " + days + " días";
+    
+                // If the count down is over, clear the interval
+                if (distance < 0) {
+                    clearInterval(x);
+                }
+            }
+    
+            // Set the date we're counting down to
+            var countDownDate = new Date("2025-10-04T00:00:00.000+02:00").getTime();
+    
+            // Initial countdown update
+            updateCountdown();
+    
+            // Update the count down every second
+            var x = setInterval(updateCountdown, 60000);
+        </script>
+</body>
+
+</html>

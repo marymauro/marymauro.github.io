@@ -558,10 +558,10 @@ Features-stack
 .events {
   .leftcol {
     padding-right: 100px;
-    border-right: solid 1px $keyline-color;
   }
   .rightcol {
     padding-left: 100px;
+    border-left: solid 1px $keyline-color;
   }
 
   .time {
@@ -902,4 +902,31 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+.recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.box h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.box p {
+  color: #666;
 }

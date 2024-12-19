@@ -19,9 +19,9 @@
     <meta property="og:description" content="Nos encantaría invitarte a nuestro gran día.">
     <meta property="og:image" content="img/logowedding.png">
     <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/logowedding.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/logowedding.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/logowedding.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="img/logowedding.svg" color="#5bbad5">
 
@@ -74,20 +74,18 @@
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
-                                <li><a href="#intro">Cómo nos conocimos</a></li>
                                 <li><a href="#agenda">Agenda</a></li>
-                                <li><a href="#preboda">Preboda</a></li>
-                                <li><a href="#parroquia">Parroquia</a></li>
-                                <li><a href="#bodega">Bodega</a></li>
+                                <li><a href="#preboda">Boda</a></li>
                                 <li><a href="#regalo">Regalo</a></li>
+                                <li><a href="./recomendaciones.html">Recomendaciones</a></li>
                                 <li><a href="#eng-fotos">Fotos</a></li>
                                 <li><a id="contador"></a></a></li>
                             </ul>
                             <ul class="member-actions">
                                 <li><a href="#rsvp" class="btn-white btn-small"
-                                        onclick="window.location.href = '#rsvp'; return false;">RSVP</a></li>
+                                    data-toggle="modal" data-target="#rsvp-modal""><i class="fa fa-address-card"></i>&nbsp;&nbsp;Confirmar asistencia</a></li>
                                 <li><a href="#contacto" class="btn-white btn-small"
-                                        onclick="window.location.href = '#contacto'; return false;">Contacto</a></li>
+                                        onclick="window.location.href = '#contacto'; return false;"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contacto</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -97,126 +95,150 @@
                 </div>
             </header>
         </section>
-        <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-    </section>
-
-    <section id="invitation" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>¡Nos casamos!</h3>
-                    <!-- <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                    <a href="https://logwork.com/countdown-timer" class="countdown-timer"
-                        data-timezone="America/Los_Angeles" data-date="2025-10-04 12:00" data-background="#b3c7db"
-                        data-digitscolor="#ffffff"
-                        style="width: 100%; max-width: 500px; display: block; margin: 0 auto; text-align: center; pointer-events: none;">
-                        &#8203;
-                    </a> -->
-                    <div class="col-md-12 text-center" style="font-family: 'Georgia', cursive; font-size: 24pt">
-                        <span class="big-text"><strong>4 de octubre de 2025</strong></span>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <br>
-                    Queridos familiares y amigos, <br>
-                    <br>
-                    Estamos muy contentos de celebrar este día tan especial con todos vosotros. <br>
-                    Gracias por ser parte de esta aventura. <br>
-                    <br>
-                    ¡Os esperamos!
-                </div>
-            </div>
-        </div>
+        <div class="down-arrow floating-arrow"><a href="#intro"><i class="fa fa-angle-down"></i></a></div>
     </section>
 
     <section id="intro">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="header">Cómo nos conocimos</h3>
+            <div class="col-md-12 text-center">
+                <h3>¡Nos casamos!</h3>
+                <!-- <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                <a href="https://logwork.com/countdown-timer" class="countdown-timer"
+                    data-timezone="America/Los_Angeles" data-date="2025-10-04 12:00" data-background="#b3c7db"
+                    data-digitscolor="#ffffff"
+                    style="width: 100%; max-width: 500px; display: block; margin: 0 auto; text-align: center; pointer-events: none;">
+                    &#8203;
+                </a> -->
+                <div class="col-md-12 text-center" style="font-family: 'Georgia', cursive; font-size: 24pt">
+                    <span class="big-text"><strong>4 de octubre de 2025</strong></span>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/mar.png" class="wp1"></div>
+                <div class="col-md-3 hidden-sm hidden-xs image-fade"><img src="img/left.png" class="wp1"></div>
                 <div class="col-md-6">
                     <p>
-                        Nos conocimos en tal en tal. <br>
-                        Fue amor a primera vista y nos llevamos muy bien. <br>
-                        Desde entonces hemos estado juntos y hemos crecido juntos.
+                        Queridos familiares y amigos, <br>
+                        Estamos muy contentos de celebrar este día tan especial con todos vosotros. <br>
+                        Gracias por ser parte de esta aventura. <br>
+                        ¡Os esperamos!
                     </p>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#rsvp-modal" style="display: inline-block; margin: 0 auto;">
+                                <i class="fa fa-address-card"></i>&nbsp;&nbsp;Confirmar asistencia
+                            </a>
+                        </div>
+                    </div>
+                    <br>
                 </div>
-                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/mauro.png" class="wp2"></div>
+                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/right.png" class="wp2"></div>
             </div>
             <div class="row">
-                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/mar.png" class="wp8">
+                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/left.png" class="wp8">
                 </div>
-                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/mauro.png" class="wp9">
+                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/right.png" class="wp9">
                 </div>
             </div>
         </div>
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="height: 92vh; overflow: hidden;">
+                    <div class="modal-body" style="height: 100%; padding: 2%;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background-color: rgba(0, 0, 0, 0.5); color: white; border: none; width: 20px; height: 20px; margin-bottom: 5px; font-size: 16px; display: flex; align-items: center; justify-content: center;">
+                            <span>×</span>
+                        </button>
+                        <div class="embed-responsive embed-responsive-4by3" style="height: 100%; width: 100%;">
+                            <!-- <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfU-2yQN_Wj_RCeQPjRdudWfzuKoGq5C8fuWSze2onSVhm6ow/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="height: 100%;">Loading…</iframe> -->
+                            <iframe class="embed-responsive-item"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSdr9gEyBb2nZy0IrVO5ZUhJ25IBSMAVvWnW5VfJEBVImI4hxA/viewform?embedded=true"
+                                frameborder="0" marginheight="0" marginwidth="0" style="height: 100%; width: 100%;">Cargando…</iframe>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        
     </section>
 
-    <section class="events section-padding" id="agenda">
+    <section>
+        <div><br></div>
+    </section>
+
+    <section class="events" id="agenda">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <h3 class="header">Agenda</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
-                        <p><strong>3 de octubre</strong></p>
-                        <h5> <em>20:00</em> &nbsp; - &nbsp; Preboda en La Becada</h5>
-                        <p>
-                            Ya estaremos en Logroño deseando veros a todos. Habrá raciones y bebidas.
-                        </p>
-                    </div>
-                    <div class="wp5">
-                        <h5><em>00:00</em> &nbsp; - &nbsp; Retirada a casa</h5>
-                        <p>Hora de descansar, lo mejor está por llegar.</p>
+                        <p class="text-center"><strong>3 de octubre</strong></p>
+                        <h5><em><strong>EVENTO:</strong></em> PREBODA</h5>
+                        <h5><em><strong>HORA:</strong></em> 20:00</h5>
+                        <h5><em><strong>LUGAR:</strong></em> SOCIEDAD GASTRONÓMICA “LA&nbsp;BECADA”</h5>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp4">
-                        <p><strong>4 de octubre</strong></p>
-                        <h5><em>12:30</em> &nbsp; - &nbsp; Parroquia de Santa María de la Redonda</h5>
-                        <p>
-                            Ceremonia. <br>
-                            Habrá servicio de autobuses a la bodega.
-                        </p>
+                        <p class="text-center"><strong>4 de octubre</strong></p>
+                        <h5><em><strong>EVENTO:</strong></em> CEREMONIA</h5>
+                        <h5><em><strong>HORA:</strong></em> 12:30</h5>
+                        <h5><em><strong>LUGAR:</strong></em> IGLESIA CONCATEDRAL DE&nbsp;SANTA&nbsp;MARÍA&nbsp;DE&nbsp;LA&nbsp;REDONDA</h5>
                     </div>
+                    <br>
                     <div class="wp6">
-                        <h5><em>14:30</em> &nbsp; - &nbsp; Bodega Marqués de Vargas</h5>
-                        <p>
-                            Celebración. <br>
-                            Habrá servicio de autobuses a Logroño.
-                        </p>
+                        <h5><em><strong>EVENTO:</strong></em> CELEBRACIÓN</h5>
+                        <h5><em><strong>HORA:</strong></em> 14:00</h5>
+                        <h5><em><strong>LUGAR:</strong></em> BODEGA MARQUÉS DE VARGAS</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-padding">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                        <i class="fa fa-tags"></i>&nbsp;&nbsp;Dress code
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="height: 92vh; overflow: hidden;">
+                    <div class="modal-body" style="height: 100%; padding: 2%;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background-color: rgba(0, 0, 0, 0.5); color: white; border: none; width: 20px; height: 20px; margin-bottom: 5px; font-size: 16px; display: flex; align-items: center; justify-content: center;">
+                            <span>×</span>
+                        </button>
+                        <br>
+                        <br>
+                        <p class="text-center"><strong>PREBODA</strong></p>
+                        <p class="text-center"><strong>CEREMONIA</strong></p>
+                        <p class="text-center"><strong>CELEBRACIÓN</strong></p>
                     </div>
                 </div>
             </div>
         </div>
     <!-- #TODO Dress code -->
     </section>
-
+    
     <section id="preboda" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header" style="padding-bottom: 0;">Sociedad Gastronómica La Becada<br>
+                    <h3 class="header" style="padding-bottom: 0;">Sociedad Gastronómica La&nbsp;Becada<br>
                         <p><span style="font-size: 11px;"><em>C. Santiago, 3, Logroño</p></em></span>
                     </h3>
                 </div>
-                <div class="col-md-7 text-center"><img src="img/logrono-concatedral-2.jpg"
+                <div class="col-md-7 text-center"><img src="img/becada.png"
                         style="max-width: 85%; height: auto;" class="wp1"></div>
                 <div class="col-md-5">
                     <p>
                         <br>
-                        Se encuentra en pleno corazón del casco antiguo logroñés.
-                        Mezcla estilos arquitectónicos desde el siglo XVI al XVIII.
-                        Destaca por su exterior barroco con torres gemelas, su interior de tres naves y su rica
-                        colección artística.
-                        <a href="https://laredonda.org/" target="_blank">Más info</a>
+                        Sociedad Gastronómica fundada en 1941.
+                        El origen del edificio data de mediados del siglo XVIII,
+                        cuando era el hogar de los hermanos Delhuyar (descubridores del Wolframio).
+                        <a href="https://labecada.com/" target="_blank">Más info</a>
                     </p>
                     
                     <p align="center">
@@ -305,10 +327,8 @@
                     <h3 class="header">Regalo</h3>
                 </div>
                 <div class="col-md-12 text-center">
-                    <p>Nuestro mayor regalo es poder compartir este día con vosotros.
-                        Nos hace inmensamente felices. <br>
-                        Sin embargo, si quieres tener un detalle con nosotros, puedes ayudarnos con el viaje de novios y
-                        nuestra nueva vida juntos.
+                    <p>El mejor regalo es poder compartir este día con vosotros, nos hace inmensamente felices. <br>
+                        Si además quieres tener un detalle con nosotros, puedes ayudarnos con nuestro viaje de novios.
                     </p>
                     <p><em>ES88 1465 0100 9117 6373 3150</em></p>
                 </div>
@@ -325,62 +345,122 @@
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/juntos.jpeg">
+                    <a class="fancybox" rel="group" href="img/bottom-1.png">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <img src="img/juntos.jpeg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="img/bottom-1.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/juntos.jpeg">
+                    <a class="fancybox" rel="group" href="img/bottom-2.png">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <img src="img/juntos.jpeg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="img/bottom-2.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/juntos.jpeg">
+                    <a class="fancybox" rel="group" href="img/bottom-3.png">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <img src="img/juntos.jpeg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="img/bottom-3.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/juntos.jpeg">
+                    <a class="fancybox" rel="group" href="img/bottom-4.png">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <img src="img/juntos.jpeg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="img/bottom-4.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/juntos.jpeg">
+                    <a class="fancybox" rel="group" href="img/bottom-5.png">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <img src="img/juntos.jpeg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="img/bottom-5.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/juntos.jpeg">
+                    <a class="fancybox" rel="group" href="img/bottom-6.png">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <img src="img/juntos.jpeg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="img/bottom-6.png" alt="" style="max-width: 100%; height: auto;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/bottom-7.png">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/bottom-7.png" alt="" style="max-width: 100%; height: auto;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/bottom-8.png">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/bottom-8.png" alt="" style="max-width: 100%; height: auto;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/bottom-9.png">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/bottom-9.png" alt="" style="max-width: 100%; height: auto;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/bottom-10.png">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/bottom-10.png" alt="" style="max-width: 100%; height: auto;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/bottom-11.png">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/bottom-11.png" alt="" style="max-width: 100%; height: auto;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/bottom-12.png">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/bottom-12.png" alt="" style="max-width: 100%; height: auto;">
                         </div>
                     </a>
                 </div>
@@ -410,23 +490,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="rsvp text-center" id="rsvp">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="header">RSVP</h3>
-                </div>
-            </div>
-            <div class="embed-responsive embed-responsive-4by3" style="height: 100vh;">
-                <!-- <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfU-2yQN_Wj_RCeQPjRdudWfzuKoGq5C8fuWSze2onSVhm6ow/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="height: 100%;">Loading…</iframe> -->
-                <iframe class="embed-responsive-item"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdr9gEyBb2nZy0IrVO5ZUhJ25IBSMAVvWnW5VfJEBVImI4hxA/viewform?embedded=true"
-                    frameborder="0" marginheight="0" marginwidth="0" style="height: 100%;">Cargando…</iframe>
-            </div>
-            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfU-2yQN_Wj_RCeQPjRdudWfzuKoGq5C8fuWSze2onSVhm6ow/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
         </div>
     </section>
 
